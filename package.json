@@ -1,0 +1,29 @@
+{
+  "name": "digitalskola",
+  "version": "1.0.0",
+  "description": "API Automation Testing dengan Mocha, Chai, dan Mochawesome",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha test.js --reporter mochawesome --timeout 10000"
+  },
+  "keywords": [
+    "api",
+    "automation",
+    "mocha",
+    "chai",
+    "mochawesome"
+  ],
+  "author": "Hafiz Hamdani",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "mocha": "^11.7.4",
+    "mochawesome": "^7.1.4"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-json-schema": "^1.5.1"
+  }
+}
