@@ -1,0 +1,25 @@
+{
+    "name": "selenium-mocha-digital-skola",
+    "version": "1.0.0",
+    "description": "Selenium WebDriver tests using Mocha with Mochawesome reports and Page Object Model",
+    "scripts": {
+        "test": "mocha test-saucedemo-pom.js --reporter mochawesome --timeout 60000",
+        "test:console": "mocha test-saucedemo-pom.js --timeout 60000",
+        "test:auth": "mocha test-saucedemo-pom.js --grep \"Authentication Tests\" --reporter mochawesome --timeout 60000",
+        "test:sort": "mocha test-saucedemo-pom.js --grep \"Product Sorting Tests\" --reporter mochawesome --timeout 60000",
+        "test:visual": "mocha test-saucedemo-pom.js --grep \"Visual Testing\" --reporter mochawesome --timeout 60000",
+        "test:old": "mocha tests/test_sesi9.js --reporter mochawesome --recursive --timeout 60000"
+    },
+    "dependencies": {
+        "pixelmatch": "^7.1.0",
+        "pngjs": "^7.0.0",
+        "selenium-webdriver": "^4.17.0"
+    },
+    "devDependencies": {
+        "chromedriver": "^141.0.6",
+        "exceljs": "^4.4.0",
+        "mocha": "^10.4.0",
+        "mocha-simple-html-reporter": "^2.0.0",
+        "mochawesome": "^7.1.3"
+    }
+}
